@@ -28,17 +28,17 @@ trainer.train(
 # Treinar o robô com uma lista de convesas em português feito pela comunidade
 trainer = ListTrainer(portuguese_bot)
 
-@app.route("/index")
+@app.route("/home")
 def home():
-    return render_template("index.html")
+    return render_template("home.html")
 
 @app.route("/")
 def login():
     return render_template("login.html")
 
-@app.route("/denisbot")
-def denisbot():
-    return render_template("denisbot.html")
+@app.route("/chatbot")
+def chatbot():
+    return render_template("chatbot.html")
 
 @app.route("/get")
 def get_bot_response():
