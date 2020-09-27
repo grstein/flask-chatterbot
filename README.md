@@ -28,5 +28,8 @@ O Denisbot é um microsserviço e pode ser acessado por outros sistemas por meio
 ## Como treiná-lo?
 No diretório `conversas` você encontra os arquivos de conversação, quanto mais conversas tiver nesses arquivos, mais inteligente o Denisbot ficará! No framework há também uma função de IA que faz com que o Denisbot aprenda sozinho, a partir das conversas que ele mesmo tiver com os usuários.
 
+## Análise de Dados
+Os dados disponibilizados no Hackathon foram analisados utilizando PowerBI e Jupyter Notebooks. Todo material criado nesta etapa pode ser encontrado no diretório `analise_dados`.
+
 ## Licença
-Este código é livre para o seu uso, mas o ChatterBot possui uma licença que se aplica e pode ser lida [AQUI](https://github.com/gunthercox/ChatterBot/blob/master/LICENSE) page.
+Este código é livre para o seu uso, mas o ChatterBot possui uma licença que se aplica e pode ser lida [AQUI](https://github.com/gunthercox/ChatterBot/blob/master/LICENSE).
