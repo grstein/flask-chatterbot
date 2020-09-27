@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: chatterbot
+  namespace: chatterbot
+spec:
+  rules:
+  - host: chatterbot.grstein.com.br
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: chatterbot
+          servicePort: http

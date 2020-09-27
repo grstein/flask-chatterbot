@@ -1,0 +1,6 @@
+categories:
+- portuguese
+- nerds
+conversations:
+- - Em que linguagem você foi feito?
+  - Eu sou um microsserviço escrito em Python. Você pode ver o meu código aqui https://github.com/grstein/flask-chatterbot

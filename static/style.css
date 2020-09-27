@@ -1,20 +1,109 @@
+/* CSS RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 body {
-    font-family: Garamond;
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    color: black;
-    margin-bottom: 0;
-    margin-top: 0;
     text-align: center;
-    font-size: 40px;
+    /* font-family: Ave; */
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 23px;
 }
 
-h3 {
-    color: black;
-    font-size: 20px;
-    margin-top: 3px;
+h2 {
+    font-size: 24px;
     text-align: center;
+    color: #1D3153;
+    opacity: 1;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+#cabecalho {
+    background-color: #3A444E;
+    color: white;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+#cabecalho img{
+    padding-top: 17px;
+}
+
+main {/*main da página chatbox*/
+    position: absolute;
+    left: 233px;
+    top: 146px;
+    bottom: 60px;
+    width: 898px;
+    height: 698px;
+    margin-bottom:88px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+}
+
+#section-chatbox{
+    position: relative;
+    left: 92px;
+    width: 714px;
+    height: 442px;
+    background-color: #d9e0e6;
+    opacity: 1;
+}
+
+#data-chatbot {
+    position: relative;
+    bottom: -800px;
+    text-align: center;
+    font-size: 16px;
+    color: #2c4d66;
+    opacity: 0.6;
 }
 
 #chatbox {
@@ -74,8 +163,54 @@ h3 {
 }
 
 #tidbit {
-    position:absolute;
-    bottom:0;
-    right:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 300px;
+}
+
+/*======HOME======*/
+
+#main-home {
+    position: absolute;
+    left: 233px;
+    top: 146px;
+    width: 898px;
+    height: 432px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 2px 3px 10px -1px rgba(0,0,0,0.75);
+}
+#h2-home{
+    font-size: 40px;
+}
+strong{
+    font-weight: bolder;
+}
+#texto-home{
+    text-justify: distribute;
+}
+#main-home a{
+    position: absolute;
+    bottom: 60px;
+    left: 315px;
+    background-color:#dacb8d;  
+    opacity: 1;  
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color:#3A444E;
+    border-radius: 4px;
+    padding-top: 11px;
+    padding-right: 31px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+}
+#data{
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    font-size: 16px;
+    color: #2c4d66;
+    opacity: 0.6;
 }
