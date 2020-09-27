@@ -12,8 +12,9 @@
         <p class="botText"><span>Hi! I'm Chatterbot.</span></p>
       </div>
       <div id="userInput">
-        <input id="textInput" type="text" name="msg" placeholder="Message">
-        <input id="buttonInput" type="submit" value="Send">
+        <input id="textInput" type="text" name="msg" placeholder="Mensagem">
+        <input id="buttonSend" type="submit" value="Enviar">
+        <input id="buttonAttach" type="submit" value="Anexar">
       </div>
       <script>
         function getBotResponse() {
@@ -33,7 +34,7 @@
                 getBotResponse();
             }
         });
-        $("#buttonInput").click(function() {
+        $("#buttonSend").click(function() {
             if (document.getElementById("textInput").value != "") {
                 getBotResponse();
             }
