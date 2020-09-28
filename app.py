@@ -82,6 +82,10 @@ def upload_file():
 def chatbot():
     return render_template("chatbot.html")
 
+@app.route("/exportacao")
+def exportacao():
+    return render_template("exportacao.html")
+
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')

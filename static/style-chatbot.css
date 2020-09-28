@@ -85,7 +85,7 @@ main {/*main da página chatbox*/
     top: 146px;
     bottom: 60px;
     width: 898px;
-    height: 698px;
+    height: 1000px;
     margin-bottom:88px;
     background-color: white;
     text-align: center;
@@ -96,14 +96,14 @@ main {/*main da página chatbox*/
     position: relative;
     left: 92px;
     width: 714px;
-    height: 442px;
+    height: 800px;
     background-color: #f4faff;
     opacity: 1;
 }
 
 #data-chatbot {
     position: relative;
-    bottom: -800px;
+    top: 1100px;
     text-align: center;
     font-size: 16px;
     color: #2c4d66;
@@ -172,4 +172,16 @@ main {/*main da página chatbox*/
     right: 0;
     width: 300px;
 }
-
+#btn3{
+    position: relative;
+    bottom: 50px;
+   font-size: 16px; 
+   padding-top:11px;
+   padding-right: 94px;
+   padding-bottom: 11px;
+   padding-left: 94px;
+   background-color: #DACB8D;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #3A444E;
+}
