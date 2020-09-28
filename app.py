@@ -20,7 +20,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #
 
 # Cria uma instância do Chatterbot
-portuguese_bot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter",database_uri='sqlite:///database.sqlite3')
+portuguese_bot = ChatBot("Chatterbot", read_only=True, storage_adapter="chatterbot.storage.SQLStorageAdapter",database_uri='sqlite:///database.sqlite3')
 # Cria uma instância do treinador
 trainer = ChatterBotCorpusTrainer(portuguese_bot)
 

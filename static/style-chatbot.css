@@ -141,7 +141,7 @@ main {/*main da página chatbox*/
 .userText {
     color: #e6ebf1;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 15px;
     text-align: right;
     line-height: 30px;
 }
@@ -149,13 +149,13 @@ main {/*main da página chatbox*/
 .userText span {
     background-color: #3a444e;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .botText {
     color: #3a444e;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
     line-height: 30px;
 }
@@ -163,7 +163,7 @@ main {/*main da página chatbox*/
 .botText span {
     background-color: #e6ebf1;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 #tidbit {

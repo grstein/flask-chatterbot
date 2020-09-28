@@ -30,14 +30,30 @@
                   <p class="botText"><span>Oi, eu sou o Denisbot!</span></p>
                 </div>
                 <div id="userInput">
-                  <input id="textInput" type="text" name="msg" placeholder="Message">
-                  <input id="buttonInput" type="submit" value="Send">
+                  <input id="textInput" type="text" name="msg" placeholder="Mensagem">
+                  <input id="buttonInput" type="submit" value="Enviar">
+                </div>
+                <div id="userUpload">
+                  <input id="fileUpload" type="file" name="Upload">
+                  <input id="buttonUpload" type="submit" value="Upload">
                 </div>
                 <script>
                   function getBotResponse() {
                     var rawText = $("#textInput").val();
                     var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
                     $("#textInput").val("");
+                    $("#chatbox").append(userHtml);
+                    document.getElementById('userUpload').scrollIntoView({block: 'start', behavior: 'smooth'});
+                    $.get("/get", { msg: rawText }).done(function(data) {
+                      var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+                      $("#chatbox").append(botHtml);
+                      document.getElementById('userUpload').scrollIntoView({block: 'start', behavior: 'smooth'});
+                    });
+                  }
+                  function getUploadResponse() {
+                    var rawText = "arquivo";
+                    var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+                    $("#fileUpload").val("");
                     $("#chatbox").append(userHtml);
                     document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
                     $.get("/get", { msg: rawText }).done(function(data) {
@@ -55,6 +71,9 @@
                       if (document.getElementById("textInput").value != "") {
                           getBotResponse();
                       }
+                  });
+                  $("#buttonUpload").click(function() {
+                        getUploadResponse();
                   })
                 </script>
               </div>
@@ -62,10 +81,6 @@
         </section>
         
     </main>
-    <form method=post enctype=multipart/form-data>
-        <input type=file name=file>
-        <input type=submit value=Upload>
-    </form>
     <div id="data-chatbot">
         <script>
             document.write("Acesso em " + now.getDate () + " de " + monName [now.getMonth()  ]   +  " de "  +     now.getFullYear ())
